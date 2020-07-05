@@ -1,0 +1,45 @@
+Countries 2020
+--------------
+
+Complete metadata in metadata.pdf file.
+
+--------------
+File naming
+
+pattern: theme_spatilatype_resolution_year_projection_subset.format
+example: CNTR_BN_01M_2020_3035_COASTL.geojson
+
+theme:
+4-character code of theme (CNTR - countries),
+
+spatialtype: BN/RG/LB
+* BN: boundaries (multilines)
+* RG: regions (multipolygons)
+* LB: labels (points)
+
+resolution: 60M/20M/10M/03M/01M; map scale the data is optimized (generalized) for.
+
+year: the year of release (2020/2016/2013/2010/2006/2001).
+
+projection: 4-digit EPSG code, see http://spatialreference.org/ref/epsg/
+* EPSG:4326 (WGS84, coordinates in decimal degrees),
+* EPSG:3035 (ETRS 1989 in Lambert Azimutal projection with centre in E52N10, coordinates in meters),
+* EPSG:3857 (WGS84 Web Mercator Auxiliary Sphere, coordinates in meters)
+
+subset: one of NUTS levels
+* COASTL: coastal lines
+* INLAND: inland lines
+Coastal and inland lines are complementary - both together form full set of country boundaries. 
+File with no subset code consists of both coastal and inland boundaries.
+
+format:
+* .gdb - file geodatabase (ESRI) http://desktop.arcgis.com/en/arcmap/10.3/manage-data/administer-file-gdbs/file-geodatabases.htm
+* .shp.zip - zipped shapefile (ESRI) http://downloads.esri.com/support/whitepapers/mo_/shapefile.pdf
+* .geojson - http://geojson.org
+* .json - topoJSON https://github.com/topojson/topojson-specification
+* .pbf - geobuf - geojson compressed into protocol buffers, see https://github.com/mapbox/geobuf
+* .svg.zip - zipped SVG (scalable vector graphics) https://www.w3.org/TR/SVG2/
+
+---------
+Release notes:2020-04-06 Added: countries 2020.
+2020-04-06 Added: countries 2020.

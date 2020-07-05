@@ -1,0 +1,29 @@
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-01m.shp.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-01m.json.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-01m.geojson.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-01m.gdb.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-01m.svg.zip
+
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-03m.shp.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-03m.json.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-03m.geojson.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-03m.gdb.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-03m.svg.zip
+
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-10m.shp.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-10m.json.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-10m.geojson.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-10m.gdb.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-10m.svg.zip
+
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-20m.shp.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-20m.json.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-20m.geojson.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-20m.gdb.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-20m.svg.zip
+
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-60m.shp.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-60m.json.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-60m.geojson.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-60m.gdb.zip
+wget http://gisco-services.ec.europa.eu/distribution/v2/countries/download/ref-countries-2020-60m.svg.zip
