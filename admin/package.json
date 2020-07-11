@@ -16,6 +16,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://jsdata.herokuapp.com",
+  "homepage": "https://jsdata.herokuapp.com/admin",
   "eslintConfig": {
     "extends": "react-app"
   },

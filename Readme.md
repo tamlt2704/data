@@ -9,4 +9,7 @@ npx gitignore node
 4. create a procfile
 echo "web: node app.js" > Procfile
 
-
+5. install dependencies
+npm install --save node-tesseract
+npm install --save morgan 
+npm install --save multer

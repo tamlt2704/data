@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build_client": "cd client && npm run build",
+    "deploy": "git add . && git commit -m 'deploy' && git push ssh web"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,8 @@
   "homepage": "https://github.com/tamlt2704/data#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
     "node-tesseract": "^0.2.7"
   }
 }
