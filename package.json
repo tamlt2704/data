@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build_client": "cd client && npm run build",
-    "deploy": "git add . && git commit -m 'deploy' && git push ssh web"
+    "build_admin": "cd admin && npm run build",
+    "gitpush": "git push ssh web"
   },
   "repository": {
     "type": "git",
