@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build_client": "cd client && npm run build",
     "build_admin": "cd admin && npm run build",
-    "gitpush": "git push ssh web"
+    "gitpush": "git push ssh web",
+    "build": "npm install --prefix client && npm run build --prefix client && npm install --prefix admin && npm run build --prefix admin",
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client && npm install --prefix admin && npm run build --prefix admin"
   },
   "repository": {
     "type": "git",
