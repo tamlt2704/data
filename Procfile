@@ -1,2 +1,2 @@
-release: echo 'pre-release' && npm run build_client && npm run build_admin
+release: echo 'pre-release' && cd client && npm install && npm run build && cd admin && npm install && npm run build
 web: node app.js
