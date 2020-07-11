@@ -1,4 +1,5 @@
 const express = require('express');
+var tesseract = require('node-tesseract');
 const app = express()
 
 app.use(express.static('public'))
