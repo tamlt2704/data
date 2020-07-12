@@ -13,3 +13,8 @@ echo "web: node app.js" > Procfile
 npm install --save node-tesseract
 npm install --save morgan 
 npm install --save multer
+
+6. swagger
+
+npm install swagger-ui-express --save
+npm install swagger-jsdoc --save
