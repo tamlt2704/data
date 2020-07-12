@@ -58,6 +58,7 @@ app.post('/ocr', upload.single('ocrimage'), (req, res, next) => {
         .then(text => {
             fs.unlink(path, function (err) {
                 if (err){
+                    console.log( 'error unlink', err )
                     res.json(500, "Error while scanning image");
                 }
                 console.log('successfully deleted %s', path);
@@ -65,7 +66,7 @@ app.post('/ocr', upload.single('ocrimage'), (req, res, next) => {
             res.json(200, text);
         })
         .catch(error => {
-            res.json(500, "Error while scanning image");
+            res.json(500, "Error while scanning image", error);
             console.log(error.message)
         })
     } catch (err) {
