@@ -1,5 +1,4 @@
 const express = require('express');
-var tesseract = require('node-tesseract');
 const logger = require("morgan");
 const path = require("path");
 const swaggerUi = require('swagger-ui-express');

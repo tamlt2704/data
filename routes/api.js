@@ -3,6 +3,15 @@ var app = express.Router();
 var fs = require('fs')
 var gadm_countries_json = require('../public/data/gadm.json');
 var fetch = require('node-fetch')
+var multer  = require('multer');
+
+const tesseract = require("node-tesseract-ocr")
+const config = {
+      lang: "eng",
+      oem: 1,
+      psm: 3,
+}
+
 
 /**
  * @swagger
@@ -17,6 +26,54 @@ var fetch = require('node-fetch')
  *                  description: current time
  *              
  * */
+
+var upload = multer({
+    'dest': './.tmp',
+    'inMemory': false
+});
+
+/**
+ * @swagger
+ *      /api/ocr:
+ *          post:
+ *              summary: image to text
+ *              consumes:
+ *                  - multipart/form-data
+ *              produces:
+ *                  - application/json
+ *              responses:
+ *                  200:
+ *                      description: get list of countries topo json
+ *              parameters:
+ *                  - in: formData
+ *                    name: ocrimage 
+ *                    type: file
+ *                    description: Image contain text
+ *
+*/
+app.post('/ocr', upload.single('ocrimage'), (req, res, next) => {
+    try {
+        var path = req.file.path;
+        tesseract.recognize(path, config)
+        .then(text => {
+            fs.unlink(path, function (err) {
+                if (err){
+                    res.json(500, "Error while scanning image");
+                }
+                console.log('successfully deleted %s', path);
+            });
+            res.json(200, text);
+        })
+        .catch(error => {
+            res.json(500, "Error while scanning image");
+            console.log(error.message)
+        })
+    } catch (err) {
+		console.log(err)
+		res.json(500, "Error while scanning image");
+    }
+})
+
 app.get('/time', (req, res) => {
         res.json({'time': new Date()});
 });
